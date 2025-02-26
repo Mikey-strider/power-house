@@ -12,5 +12,5 @@ urlpatterns = [
     path('about/mr-ph/', views.about.mr-ph, name='mr-ph'),
     path('about/ms-ph/', views.about.ms-ph, name='ms-ph'),
     path('about/sling-it/', views.about.sling-it, name='sling-it'),
-    path('about/tattos/', views.about.)
+    path('about/tattos/', views.about.tattoos, name='tattoos')
 ]
