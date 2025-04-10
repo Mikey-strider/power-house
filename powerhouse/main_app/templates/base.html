@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,30 +7,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/png" href="" />
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
     <title>Powerhouse</title>
     {% block head %} 
     {% endblock %}
   </head>
   <body>
     <header>
-      <h1><a href="/">Powerhouse SF</a></h1>
-      <!-- <div class="header-logo-container">
+      <!-- <h1><a href="/">Powerhouse SF</a></h1> -->
+      <div class="header-logo-container">
         <a href="/">
-          <img src="" alt="The Cat Collector Logo" />
+          <img src="{% static 'images/powerhouselogo.png' %}" alt="The Powerhouse Bar Logo" />
         </a>
-      </div> -->
+      </div>
       <nav>
         <ul>
-          <li><a href="/about">About</a></li>
-          <li><a href="/current">Current Staff</a></li>
-          <li><a href="/staff-past">Past Staff</a></li>
-          <li><a href="/bar-history">Bar History</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="/mr-ph">Mr. Powerhouse</a></li>
-          <li><a href="/ms-ph">Ms. Powerhouse</a></li>
-          <li><a href="/sling-it">Sling It</a></li>
-          <li><a href="/tattoos">Tattoos</a></li>
-          <li><a href="/artists">Artists</a></li>
+          <div class="dropdown">
+            <a href="/about" class="dropbtn">About</a>
+            <div class="dropdown-content">
+              <a href="/current">Current Staff</a>
+              <a href="/staff-past">Past Staff</a>
+              <a href="/bar-history">Bar History</a>
+              <a href="/contact">Contact</a>
+              <a href="/mr-ph">Mr. Powerhouse</a>
+              <a href="/ms-ph">Ms. Powerhouse</a>
+              <a href="/sling-it">Sling It</a>
+              <a href="/tattoos">Tattoos</a>
+              <a href="/artists">Artists</a>
+            </div>
+          </div>
           <li><a href="/pix">Pix</a></li>
           <li><a href="/events">Events</a></li>
           <li><a href="/map">Map</a></li>
