@@ -1,11 +1,21 @@
+
 {% extends "base.html" %} 
+{% load static%}
 {% block title %} 
   Main Page 
 {% endblock %} 
 {% block content %}
 <h1>Powerhouse SF home page</h1>
 <hr />
-<p class="page-content">
-  this is the about page for powerhouse
-</p>
+<hr />
+<div class="content">
+  <h2>For hours, follow the <a href="https://www.facebook.com/sfpowerhouse">Powerhouse facebook page at this link</a></h2>
+  <p class="page-content">
+    this is the about page for powerhouse
+  </p>
+  <img src="{% static 'images/poho-contest_header-973x360.jpg' %}" alt="">
+  <h2 style="color: rgb(16, 56, 158);">POWERHOUSE BAR</h2>
+  <h2 style="color: rgb(16, 56, 158);">SAN FRANCISCO</h2>
+  <img src="{% static 'images/drag royalty.jpg' %}" alt="">
+</div>
 {% endblock %}
